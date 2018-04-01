@@ -1,0 +1,8 @@
+rm(list=ls())
+source("analysis_summary_stats.R")
+rm(list=ls())
+source("analysis_feature_selection.R")
+rm(list=ls())
+source("analysis_classifier_sims.R")
+rm(list=ls())
+source("analysis_classifier_apps.R")
