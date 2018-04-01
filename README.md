@@ -1,4 +1,4 @@
-# Soft but not hard sweep classification is sensitive to unknown class imbalance in Bayesian classifier
+# Soft sweep detection is sensitive to assumptions about sweep prevalence
 
 Stephen Rong, Sohini Ramachandran, Brown University
 
