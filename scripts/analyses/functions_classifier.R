@@ -1,5 +1,5 @@
 library(mclust)  # gaussian mixture
-library(plotROC)  # roc curve analysis
+# library(plotROC)  # roc curve analysis
 
 # # # 
 

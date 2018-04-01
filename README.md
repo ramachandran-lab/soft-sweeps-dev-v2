@@ -8,7 +8,7 @@ Questions: Contact stephen[underscore]rong[at]brown[dot]edu or post a git issue
 
 This git repo contains the following directories:
 
-1. /scripts/simulations/ scripts for performing the simulations and calculating summary statistics, contains a copy of ...
+1. /scripts/simulations/ scripts for performing the simulations and calculating summary statistics
 
 2. /scripts/applications/ scripts for preprocessing the 1000 Genomes Phase 1 raw haplotype data
 
@@ -16,69 +16,31 @@ This git repo contains the following directories:
 
 4. /results/ used to contain the generated temporary and final figures and results 
 
+5. /data/applications/1000GP_Phase1_raw/ contains the 1000 Genomes Phase 1 raw haplotype data
+
+6. /1000GP_Phase1_raw/ contains the preprocessed 1000 Genomes Phase 1 haplotype data
+
+7. 1000GP_Phase1_misc/ contains extra files used in the analysis, explained in README.txt
+
+8. 1000GP_Phase1_stan/ contains the SNP-level summary statistics used to standardize iHS, DiHH, and XP-EHH for the application data
+
+9. 1000GP_Phase1_main/ contains the window-level summary statistics used as the application data
+
+10. /data/simulations/2017111501/ contains the SNP-level summary statistics used to standardize iHS, DiHH, and XP-EHH for the simulation data
+
+11. /data/simulations/2017111502/ contains the window-level summary statistics split into two disjoing sets for the training data and the test data
+
+12. /data/simulations/2017111502/ contains the window-level summary statistics used to assess performance on neutral sits linked to a beneficial mutation
+
+13. /hapbin_in_temp/ and /hapbin_out_temp/ are used for intermediate hapbin files
+
 ## Software Requirements:
 
-Python v2.7.13 -- R v3.4.1 -- 
+Python 2.7.13 -- numpy 1.11.3, pandas 0.19.2, pygg 0.1.7, networkx 1.11, matplotlib 2.0.0, scipy 0.18.1, sklearn 0.18.1
 
-<!-- 5. /data/applications/1000GP_Phase1_raw/ contains the 1000 Genomes Phase 1 raw haplotype data, downloaded from ...
+R 3.4.1 -- RColorBrewer 1.1-2, tidyverse 1.2.1, wrapr 1.2.0, ggthmr 1.1.0, mclust 5.4, superheat 0.1.0, ggbio 1.26.1, GenomicRanges 1.30.3, BSgenome.Hsapiens.UCSC.hg19 1.4.0
 
-6. /1000GP_Phase1_raw/ contains the preprocessed 1000 Genomes Phase 1 haplotypes ...
-
-7. 1000GP_Phase1_misc/ contains extra files used in the analysis, explained in README.txt ...
-
-8. 1000GP_Phase1_stan/ contains the SNP-level summary statistics used to standardize iHS, DiHH, and XP-EHH for the application data ...
-
-9. 1000GP_Phase1_main/ contains the window-level summary statistics used as the application data ...
-
-10. /hapbin_out_temp/ are used for intermediate hapbin files ...
-
-11. /data/simulations/2017111501/ contains the SNP-level summary statistics used to standardize iHS, DiHH, and XP-EHH for the simulation data ...
-
-12. /2017111502/ contains the window-level summary statistics split into two disjoing sets for the training data and the test data
-
-13. /2017111502/ contains the window-level summary statistics used to assess performance on neutral sits linked to a beneficial mutation ...
-
-14. /hapbin_in_temp/ and /hapbin_out_temp/ are used for intermediate hapbin files ... -->
-
-<!-- ## Software Requirements:
-
-Python v2.7.13
-
-numpy v1.11.3
-
-pandas v0.19.2
-
-pygg 0.1.7
-
-networkx v1.11
-
-matplotlib v2.0.0
-
-scipy v0.18.1
-
-sklearn v0.18.1
-
-R v3.4.0
-
-RColorBrewer v1.1.2
-
-tidyverse v1.1.1
-
-wrapr v0.1.2
-
-ks v1.10.6
-
-gplots v3.0.1
-
-ggpubr v0.1.2
-
-scales v0.4.1
-
-plyr v1.8.4
-
-msms (https://github.com/delt0r/msms)
-
-hapbin (https://github.com/evotools/hapbin) -->
+msms (https://github.com/delt0r/msms), hapbin (https://github.com/evotools/hapbin)
 
 ## Generating Training, Test, and Application Data:
 
@@ -92,8 +54,8 @@ To generate contents of /data/applications/1000GP_Phase1_main/, go to /scripts/s
 
 To generate result figures and tables, go to the /scripts/analyses/ directory and run master_script.R from within R, with the first two lines uncommented.
 
-## Generating Result Figures from Saved Above Data:
+<!-- ## Generating Result Figures from Saved Above Data: -->
 
 <!-- We have included the training and test data required for generating result figures and tables as temp.zip.  -->
 
-To generate result figures and tables, unzip these folders and replace the existing placeholder folders. Then go to the /scripts/analyses/ directory and run master_script.R from within R.
+<!-- To generate result figures and tables, unzip these folders and replace the existing placeholder folders. Then go to the /scripts/analyses/ directory and run master_script.R from within R. -->
